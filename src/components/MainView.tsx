@@ -37,12 +37,12 @@ function MainView() {
         solved: false
     });
 
-    const sendData = (event: FormEvent<HTMLInputElement>) => {
+    const sendData = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         /* Resolver */
         const solution = calcularRedes(formValues);
         setSolutionR(solution);
-        
+
     }
 
     type HandleInputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
@@ -86,7 +86,7 @@ function MainView() {
                 <div className="container-form" >
                     <h3>Datos necesarios: </h3>
                     <label >Dirección IP</label>
-                    <form onSubmit={sendData} >
+                    <form onSubmit={event => { sendData(event) }} >
                         <div className="ip-inputs" >
                             <input
                                 onChange={handleInputChange}
