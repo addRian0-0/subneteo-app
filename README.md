@@ -11,7 +11,7 @@ Esta es una aplicacion web en el que tu podras ingresar una direccion IP y las r
 - Numero de hosts por subred
 - Toda la secuencia de la mascara decimal definida por el rango
 
-#### Puedes ver la aplicacion desplegada y en funcionamiento **[aqui](https://subneteo-app.vercel.app/)**.
+#### Puedes ver la aplicacion desplegada y en funcionamiento **[aqui](https://subneteo-app-addrian.vercel.app/)**.
 
 ----
 
